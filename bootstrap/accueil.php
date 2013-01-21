@@ -1,4 +1,7 @@
-<?php $this->inc('elements/header.php'); ?>
+<?php
+defined('C5_EXECUTE') or die("Access Denied.");
+$this->inc('elements/header.php');
+?>
 <div class="row">
     <div class="span10">
         <div class="hero-unit">
@@ -38,4 +41,6 @@
         <div class="pull-right">&copy; Nilsine & ULCO</div>
     </footer>
 </div>
-<?php $this->inc('elements/footer.php'); ?>
+<?php
+$this->inc('elements/footer.php');
+?>

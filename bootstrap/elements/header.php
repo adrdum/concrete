@@ -1,35 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8">
-    <title>Maquette</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le styles -->
+    <?php   Loader::element('header_required'); ?>
+    <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <link href="<?php echo $this->getThemePath(); ?>/assets/css/bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-
-      footer {
-        margin-top: 1em;
-        padding-top: 0.5em;
-        border-top: solid 2px #ddd;
-      }
-    </style>
     <link href="<?php echo $this->getThemePath(); ?>/assets/css/bootstrap-responsive.css" rel="stylesheet">
-
+    <link href="<?php echo $this->getThemePath(); ?>/assets/css/main.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <?php Loader::element('header_required'); ?>
   </head>
-
   <body>
-
     <div class="navbar navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
@@ -40,11 +22,17 @@
           </a>
           <a class="brand" href="#">Project name</a>
           <div class="nav-collapse collapse">
+
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <!--<li><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>-->
+              <?php
+                  $a = new Area('Menu');
+                  $a->display($c);
+              ?>
             </ul>
+
           </div><!--/.nav-collapse -->
         </div>
       </div>

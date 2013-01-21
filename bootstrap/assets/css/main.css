@@ -1,0 +1,13 @@
+body {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+footer {
+    margin-top: 1em;
+    padding-top: 0.5em;
+    border-top: solid 2px #ddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+}
